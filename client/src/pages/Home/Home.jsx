@@ -6,6 +6,7 @@ import SlideBar from '../../components/SlideBar/SlideBar';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import NamingContest from './NamingContest/NamingContest';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -57,6 +58,9 @@ const Home = props => {
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
+            </div>
+            <div className={styles.namingContestContainer}>
+              <NamingContest />
             </div>
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>

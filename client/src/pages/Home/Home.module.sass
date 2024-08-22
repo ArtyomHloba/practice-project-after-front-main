@@ -241,7 +241,7 @@
     background: white
 
 
-@mixin innerContainer
+%innerContainer
   display: flex
   flex-direction: column
   justify-content: center
@@ -286,22 +286,29 @@
     padding: 0
 
 
+.namingContestContainer
+  @extend %innerContainer
+  background-color: #FAFAFA
+  padding-left: 10px
+  padding-right: 10px
+  box-sizing: border-box
+
 .greyContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #FAFAFA
 
 
 .whiteContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: white
 
 
 .greenContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #28D2D0
 
 .blueContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #2B62EC
   color: white
 
